@@ -109,7 +109,7 @@ Follow these steps:
 
 5. Access the Application:
     - The frontend will be available at `http://localhost:3000`
-    - The backend will be available at `http://localhost:4000/api`
+    - The backend will be available at `http://localhost:4000`
 
 Make sure that both the server and client are running simultaneously.
 
