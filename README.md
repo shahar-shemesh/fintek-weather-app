@@ -2,6 +2,9 @@
 
 ## Overview
 
+![weather-app](https://github.com/user-attachments/assets/626ff371-3f2b-4c44-a1d7-7c5efe06c8c2)
+
+
 WeatherApp is a Node.js-based application that provides users with real-time weather information for cities around the world. The application utilizes the WeatherAPI to fetch weather details, and it offers a user-friendly interface with features such as autocomplete city search, IP-based location detection, and comprehensive error handling. It is built using a modern frontend stack with Redux Toolkit for state management, and it is designed to be responsive across a variety of screen sizes, including mobile devices. The server follows an MVC (Model-View-Controller) architecture, making the application easy to maintain and extend.
 
 ## Directory Details
