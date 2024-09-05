@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
+
+
+* {
+
+  -webkit-tap-highlight-color: transparent;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  font-family: "Heebo", sans-serif;
+
+}
+
+
+:root {
+  /***** Main Colors: *****/
+  --backgroundColor: #fafafa;
+  --mainBackgroundColor: #F1F1F1;
+  --textColor: #707070;
+
+  --searchInputBg: #fff;
+  --searchInputText: #363636;
+
+  --searchButtonBg: #046B3B;
+  --searchButtonText: #ffff;
+
+  --weatherSideBg: #DDE4E6;
+  --weatherCardBg: #27737D;
+  --unitSymbolColor: #EFEFEF;
+  --weatherCardMainInfoColor: #E8F1F2;
+  --weatherCardSecInfoColor: #A8C6CB;
+  --weatherCardValueColor: #fff;
+
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+
+}
+
+
+body {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--backgroundColor);
+  overflow-x: hidden;
+
+}
+
+
+body *::selection {
+  background-color: var(--weatherSideBg);
+}
+
+
+@media (max-width: 1000px) {
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    overflow-x: hidden;
+    padding: 0 3%;
+    align-items: initial;
+    height: initial;
+  }
+
+}

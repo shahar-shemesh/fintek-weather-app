@@ -1,0 +1,118 @@
+.weatherContainer {
+    height: 100%;
+    grid-area: weatherContainer;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.weatherDisplay {
+    height: 100%;
+    display: flex;
+    box-shadow: 0 0 0 4rem var(--weatherSideBg);
+    margin: 0 3rem;
+    background-color: var(--weatherSideBg);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.searchWrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+    width: 80%;
+    position: relative;
+    bottom: 3rem;
+    left: 3rem;
+}
+
+.promptMsg {
+    text-align: left;
+    display: flex;
+    width: 60%;
+    color: var(--textColor);
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+.errorMsg {
+    color: #FF0000;
+    background-color: #FFE6E6;
+    border: 1px solid #FF0000;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 1rem 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loading::after {
+    content: '';
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 0.25rem solid #ccc;
+    border-top: 0.25rem solid #27737D;
+    border-radius: 50%;
+    animation: spinner 1s linear infinite;
+    display: inline-block;
+    margin-left: 0.5rem;
+}
+
+
+
+@media (max-width: 1000px) {
+    .weatherContainer {
+        row-gap: 2rem;
+        height: initial;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .searchWrapper {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.5rem;
+        width: initial;
+        position: relative;
+        bottom: 0;
+        left: 0;
+        align-items: initial;
+    }
+
+    .promptMsg {
+        text-align: center;
+        width: 100%;
+        display: flex;
+        color: var(--textColor);
+        font-size: 1.2rem;
+        font-weight: 300;
+    }
+
+    .weatherDisplay {
+        border-radius: 2px;
+        margin: 2rem 0;
+        align-items: initial;
+    }
+}
+
+
+@media (max-width: 1400px) {
+    .weatherDisplay {
+        box-shadow: 0 0 0 3rem var(--weatherSideBg);
+    }
+}

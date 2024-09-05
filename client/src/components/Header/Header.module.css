@@ -1,0 +1,36 @@
+.header {
+    grid-area: header;
+}
+
+.logo {
+    display: flex;
+    margin-top: 2rem;
+    justify-content: left;
+    transform-origin: left;
+    img {
+        transition: transform 0.3s ease;
+    }
+    img:hover {
+        transform: scale(1.1);
+    }
+        
+}
+
+
+@media (max-width: 1000px) {
+    .header {
+        display: flex;
+        height: initial;
+        width: initial;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo {
+        display: initial;
+        margin-top: initial;
+        align-items: center;
+        align-content: space-around;
+    }
+
+}
