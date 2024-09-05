@@ -16,7 +16,6 @@ WeatherApp is a Node.js-based application that provides users with real-time wea
     - **utils/**: Utility functions for frontend operations, such as formatting and validations.
   - **tests/**: Contains unit and integration tests for the client-side components.
   - **public/**: Static files.
-  - **Dockerfile**: Dockerfile for building the client application.
 
 - **server/**: Contains the Node.js code for the server-side.
   - **src/**: Source code for the server.
